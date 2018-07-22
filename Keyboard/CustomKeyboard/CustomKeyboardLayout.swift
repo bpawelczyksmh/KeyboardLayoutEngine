@@ -538,7 +538,7 @@ open class CustomKeyboardLayout {
               type: .image(UIImage(
                 named: "Globe",
                 in: Bundle(for: CustomKeyboard.self),
-                compatibleWith: nil)),
+                compatibleWith : nil)),
               style: CustomKeyboardGlobeButtonStyle,
               width: .relative(percent: 0.115),
               identifier: CustomKeyboardIdentifier.Globe.rawValue),
