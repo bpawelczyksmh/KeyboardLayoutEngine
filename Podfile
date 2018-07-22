@@ -16,5 +16,5 @@ target 'KeyboardLayoutEngineUITests' do
 end
 
 target 'Keyboard' do
-pod 'Shadow'
+pod 'Shadow', :git => 'https://github.com/yanda/Shadow.git'
 end
