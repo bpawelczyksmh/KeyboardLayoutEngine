@@ -35,9 +35,9 @@ class KeyboardViewController: UIInputViewController, CustomKeyboardDelegate {
 
     // This is how you add extra buttons to layouts for customising CustomKeyboard without even subclass it!
     let customButton = KeyboardButton(
-      type: .Text("🕶"),
+      type: .text("🕶"),
       style: CustomKeyboardKeyButtonStyle,
-      width: .Static(width: 40),
+      width: .static(width: 40),
       identifier: "customButton")
     customKeyboard.keyboardLayout.symbols.addKeyboardButton(
       keyboardButton: customButton,
@@ -65,7 +65,7 @@ class KeyboardViewController: UIInputViewController, CustomKeyboardDelegate {
           KeyMenuItem(title: "About Us", style: menuItemStyle, action: { _ in print("about pressed") }),
         ],
         style: KeyMenuStyle(itemSize: CGSize(width: 150, height: 40)),
-        type: .Vertical)
+        type: .vertical)
       globeButton?.keyMenu = menu
     }
   }

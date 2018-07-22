@@ -40,7 +40,7 @@ public struct KeyMenuStyle {
     horizontalMenuLeftPadding: CGFloat? = nil,
     horizontalMenuRightPadding: CGFloat? = nil) {
     self.shadow = shadow
-    self.backgroundColor = backgroundColor ?? UIColor.whiteColor()
+    self.backgroundColor = backgroundColor ?? UIColor.white
     self.itemSize = itemSize ?? CGSize(width: 40, height: 40)
     self.horizontalMenuItemPadding = horizontalMenuItemPadding ?? 5
     self.horizontalMenuLeftPadding = horizontalMenuLeftPadding ?? 5

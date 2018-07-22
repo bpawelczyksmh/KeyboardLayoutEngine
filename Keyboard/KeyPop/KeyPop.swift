@@ -36,12 +36,12 @@ public struct KeyPopStyle {
     textColor: UIColor? = nil,
     contentInset: CGSize? = nil,
     contentOffset: CGSize? = nil) {
-    self.backgroundColor = backgroundColor ?? UIColor.whiteColor()
+    self.backgroundColor = backgroundColor ?? UIColor.white
     self.shadow = shadow ?? nil
     self.widthMultiplier = widthMultiplier ?? 1.2
     self.heightMultiplier = heightMultiplier ?? 1.2
-    self.font = font ?? UIFont.systemFontOfSize(15)
-    self.textColor = textColor ?? UIColor.blackColor()
+    self.font = font ?? UIFont.systemFont(ofSize: 15)
+    self.textColor = textColor ?? UIColor.black
     self.contentInset = contentInset ?? CGSize(width: 5, height: 5)
     self.contentOffset = contentOffset ?? CGSize.zero
   }

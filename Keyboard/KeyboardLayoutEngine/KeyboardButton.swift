@@ -60,18 +60,18 @@ public struct KeyboardButtonStyle {
     font: UIFont? = nil,
     textOffsetY: CGFloat? = nil,
     imageSize: CGFloat? = nil,
-    tintColor: UIColor = UIColor.blackColor(),
+    tintColor: UIColor = UIColor.black,
     keyPopType: KeyPopType? = nil,
     keyPopWidthMultiplier: CGFloat? = nil,
     keyPopHeightMultiplier: CGFloat? = nil,
     keyPopContainerView: UIView? = nil) {
-    self.backgroundColor = backgroundColor ?? UIColor.whiteColor()
+    self.backgroundColor = backgroundColor ?? UIColor.white
     self.cornerRadius = cornerRadius ?? 5
-    self.borderColor = borderColor ?? UIColor.clearColor()
+    self.borderColor = borderColor ?? UIColor.clear
     self.borderWidth = borderWidth ?? 0
     self.shadow = shadow
-    self.textColor = textColor ?? UIColor.blackColor()
-    self.font = font ?? UIFont.systemFontOfSize(21)
+    self.textColor = textColor ?? UIColor.black
+    self.font = font ?? UIFont.systemFont(ofSize: 21)
     self.textOffsetY = textOffsetY ?? 0
     self.imageSize = imageSize
     self.tintColor = tintColor
@@ -246,16 +246,16 @@ open class KeyboardButton: UIView {
       cornerRadii: CGSize(
         width: style.cornerRadius * style.keyPopWidthMultiplier,
         height: style.cornerRadius * style.keyPopHeightMultiplier))
-    path.appendPath(UIBezierPath(
+    path.append(UIBezierPath(
       roundedRect: bottomRect,
-      byRoundingCorners: [.BottomLeft, .BottomRight],
+      byRoundingCorners: [.bottomLeft, .bottomRight],
       cornerRadii: CGSize(
         width: style.cornerRadius,
         height: style.cornerRadius)))
 
     let mask = CAShapeLayer()
-    mask.path = path.CGPath
-    mask.fillColor = popStyle.backgroundColor.CGColor
+    mask.path = path.cgPath
+    mask.fillColor = popStyle.backgroundColor.cgColor
 
     let popup = UIView(
       frame: CGRect(
@@ -265,7 +265,7 @@ open class KeyboardButton: UIView {
         height: content.frame.size.height + padding + frame.size.height))
     popup.addSubview(content)
     popup.layer.applyShadow(shadow: popStyle.shadow)
-    popup.layer.insertSublayer(mask, atIndex: 0)
+    popup.layer.insertSublayer(mask, at: 0)
 
     return popup
   }
@@ -318,7 +318,7 @@ open class KeyboardButton: UIView {
 
     let mask = CAShapeLayer()
     mask.path = path.cgPath
-    mask.fillColor = content.style.backgroundColor.CGColor
+    mask.fillColor = content.style.backgroundColor.cgColor
     mask.applyShadow(shadow: content.style.shadow)
 
     let popup = UIView(

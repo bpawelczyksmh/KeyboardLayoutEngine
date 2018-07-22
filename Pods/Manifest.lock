@@ -1,12 +1,21 @@
 PODS:
-  - Shadow (0.2)
+  - Shadow (0.3)
 
 DEPENDENCIES:
-  - Shadow
+  - Shadow (from `https://github.com/yanda/Shadow.git`)
+
+EXTERNAL SOURCES:
+  Shadow:
+    :git: https://github.com/yanda/Shadow.git
+
+CHECKOUT OPTIONS:
+  Shadow:
+    :commit: 14109ad0f439fa555f809683a00540b95efa57d7
+    :git: https://github.com/yanda/Shadow.git
 
 SPEC CHECKSUMS:
-  Shadow: 0fd870dd3de3ec5226315203f25ba54453547060
+  Shadow: 0b269d88a6439f9f2055d1236007c986a9f68bef
 
-PODFILE CHECKSUM: df543bce1ee7f6451a25cf49c2b49af81bcb189e
+PODFILE CHECKSUM: 53285e501c83a9b27fa4ef58c3972b2a0faae515
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

@@ -93,15 +93,15 @@ open class KeyboardRow: UIView {
   // MARK: Paddings
 
   func getLeadingPadding() -> CGFloat {
-    return isPortrait ? style.leadingPadding : style.leadingPaddingLandscape ?? style.leadingPadding
+    return isPortrait ? style.leadingPadding : style.leadingPaddingLandscape 
   }
 
   func getTrailingPadding() -> CGFloat {
-    return isPortrait ? style.trailingPadding : style.trailingPaddingLandscape ?? style.trailingPadding
+    return isPortrait ? style.trailingPadding : style.trailingPaddingLandscape 
   }
 
   func getButtonsPadding() -> CGFloat {
-    return isPortrait ? style.buttonsPadding : style.buttonsPaddingLandscape ?? style.buttonsPadding
+    return isPortrait ? style.buttonsPadding : style.buttonsPaddingLandscape 
   }
 
   // MARK: Layout
