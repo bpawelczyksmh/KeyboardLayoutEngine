@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KeyboardLayoutEngine"
-  s.version      = "0.9.9"
-  s.summary      = "⌨️ Simplest custom keyboard generator for iOS ever!"
+  s.version      = "0.9.10"
+  s.summary      = "⌨️ Simplest custom keyboard generator for iOS ever! -> Updated for Swift 4"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -284,7 +284,7 @@ optional func defaultKeyboardDidPressReturnButton(defaultKeyboard: DefaultKeyboa
 ```
                    DESC
 
-  s.homepage     = "https://github.com/cemolcay/KeyboardLayoutEngine"
+  s.homepage     = "https://github.com/yanda/KeyboardLayoutEngine"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -309,7 +309,7 @@ optional func defaultKeyboardDidPressReturnButton(defaultKeyboard: DefaultKeyboa
   #  profile URL.
   #
 
-  s.author             = { "cemolcay" => "ccemolcay@gmail.com" }
+  s.authors              = { "cemolcay" => "ccemolcay@gmail.com", "yanda" => "yanda@yanda.com"}
   # Or just: s.author    = "cemolcay"
   # s.authors            = { "cemolcay" => "ccemolcay@gmail.com" }
   # s.social_media_url   = "http://twitter.com/cemolcay"
@@ -321,7 +321,7 @@ optional func defaultKeyboardDidPressReturnButton(defaultKeyboard: DefaultKeyboa
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "11.3"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -336,7 +336,7 @@ optional func defaultKeyboardDidPressReturnButton(defaultKeyboard: DefaultKeyboa
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/cemolcay/KeyboardLayoutEngine.git", :tag => "0.9.9" }
+  s.source       = { :git => "https://github.com/yanda/KeyboardLayoutEngine.git", :tag => "0.9.10" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
