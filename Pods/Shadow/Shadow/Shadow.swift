@@ -46,8 +46,8 @@ public extension CALayer {
     shadowOpacity = shadow?.opacity ?? 0
     if let shadow = shadow {
       if let path = shadow.path {
-        shadowRadius = shadow.radius 
-        shadowOffset = shadow.offset 
+        shadowRadius = shadow.radius
+        shadowOffset = shadow.offset
         shadowPath = path.cgPath
       } else {
         var shadowRect = bounds
@@ -73,7 +73,7 @@ public extension CALayer {
 public extension UIView {
   /// Applys shadow on its layer if given object is not nil.
   /// Removes shadow on its layer if given object is nil.
-  public func applyShadow(shadow: Shadow? = nil) {
+    public func applyShadow(shadow: Shadow? = nil) {
     layer.applyShadow(shadow: shadow)
   }
 }

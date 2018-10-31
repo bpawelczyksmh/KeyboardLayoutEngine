@@ -281,6 +281,7 @@
 				B2FBDCC61CDD2224008D6100 /* Resources */,
 				B2FBDD081CDD2292008D6100 /* Embed App Extensions */,
 				18CAEFFA63180B5699CA10CE /* [CP] Embed Pods Frameworks */,
+				A4B8A177D2CC23271E10584C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +301,8 @@
 				B2FBDCD81CDD2224008D6100 /* Sources */,
 				B2FBDCD91CDD2224008D6100 /* Frameworks */,
 				B2FBDCDA1CDD2224008D6100 /* Resources */,
+				E62D412F0CD31CD4559B6F70 /* [CP] Embed Pods Frameworks */,
+				0CF08C3BF2481B0FC2CD15DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +322,8 @@
 				B2FBDCE31CDD2224008D6100 /* Sources */,
 				B2FBDCE41CDD2224008D6100 /* Frameworks */,
 				B2FBDCE51CDD2224008D6100 /* Resources */,
+				3BF74C74636821469BAD707D /* [CP] Embed Pods Frameworks */,
+				D58A2C9A686DF859AB6E496E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +343,7 @@
 				B2FBDCF91CDD2292008D6100 /* Sources */,
 				B2FBDCFA1CDD2292008D6100 /* Frameworks */,
 				B2FBDCFB1CDD2292008D6100 /* Resources */,
+				4A6430897B6CF2CF0E1AE2D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,7 +366,7 @@
 				TargetAttributes = {
 					B2FBDCC71CDD2224008D6100 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 78YFFAPD5R;
+						DevelopmentTeam = B49P7Y77SE;
 						LastSwiftMigration = 0940;
 					};
 					B2FBDCDB1CDD2224008D6100 = {
@@ -439,6 +445,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CF08C3BF2481B0FC2CD15DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardLayoutEngineTests/Pods-KeyboardLayoutEngineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		146318A17C43223D4EBDCCD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +532,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3BF74C74636821469BAD707D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardLayoutEngineUITests/Pods-KeyboardLayoutEngineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A6430897B6CF2CF0E1AE2D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		95A4E66675A7D29CF4299306 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +578,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B8A177D2CC23271E10584C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardLayoutEngine/Pods-KeyboardLayoutEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D58A2C9A686DF859AB6E496E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardLayoutEngineUITests/Pods-KeyboardLayoutEngineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E62D412F0CD31CD4559B6F70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyboardLayoutEngineTests/Pods-KeyboardLayoutEngineTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -723,11 +819,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78YFFAPD5R;
+				DEVELOPMENT_TEAM = B49P7Y77SE;
 				INFOPLIST_FILE = KeyboardLayoutEngine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.KeyboardLayoutEngine;
+				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.KeyboardLayoutE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -740,11 +836,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 78YFFAPD5R;
+				DEVELOPMENT_TEAM = B49P7Y77SE;
 				INFOPLIST_FILE = KeyboardLayoutEngine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.KeyboardLayoutEngine;
+				PRODUCT_BUNDLE_IDENTIFIER = co.prototapp.KeyboardLayoutE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
