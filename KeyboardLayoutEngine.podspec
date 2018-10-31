@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KeyboardLayoutEngine"
-  s.version      = "0.9.10"
+  s.version      = "0.10"
   s.summary      = "⌨️ Simplest custom keyboard generator for iOS ever! -> Updated for Swift 4"
 
   # This description is used to generate tags and improve search results.
