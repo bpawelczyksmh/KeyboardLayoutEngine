@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KeyboardLayoutEngine"
-  s.version      = "0.10"
+  s.version      = "0.15"
   s.summary      = "⌨️ Simplest custom keyboard generator for iOS ever! -> Updated for Swift 4"
 
   # This description is used to generate tags and improve search results.
@@ -389,5 +389,6 @@ optional func defaultKeyboardDidPressReturnButton(defaultKeyboard: DefaultKeyboa
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "Shadow"
+  s.swift_version = '4.2'
 
 end

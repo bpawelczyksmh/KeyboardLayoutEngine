@@ -33,7 +33,12 @@ public struct KeyboardButtonStyle {
   public var borderWidth: CGFloat
 
   // Shadow
-  public var shadow: Shadow?
+    public var shadow: Shadow = Shadow(
+    color: UIColor.lightGray,
+    radius: 2,
+    opacity: 0.25,
+    offset: CGSize(width: 0, height: 2),
+    path: nil)
 
   // Text
   public var textColor: UIColor
@@ -55,7 +60,7 @@ public struct KeyboardButtonStyle {
     cornerRadius: CGFloat? = nil,
     borderColor: UIColor? = nil,
     borderWidth: CGFloat? = nil,
-    shadow: Shadow? = nil,
+//    shadow: Shadow? = nil,
     textColor: UIColor? = nil,
     font: UIFont? = nil,
     textOffsetY: CGFloat? = nil,
@@ -69,7 +74,7 @@ public struct KeyboardButtonStyle {
     self.cornerRadius = cornerRadius ?? 5
     self.borderColor = borderColor ?? UIColor.clear
     self.borderWidth = borderWidth ?? 0
-    self.shadow = shadow
+//    self.shadow = shadow
     self.textColor = textColor ?? UIColor.black
     self.font = font ?? UIFont.systemFont(ofSize: 21)
     self.textOffsetY = textOffsetY ?? 0
@@ -97,7 +102,7 @@ open class KeyboardButton: UIView {
 
   open var identifier: String?
   open var hitRangeInsets: UIEdgeInsets = UIEdgeInsets.zero
-
+    
   // MARK: Init
   public init(
     type: KeyboardButtonType,
@@ -118,7 +123,7 @@ open class KeyboardButton: UIView {
     super.init(coder: aDecoder)
     reload()
   }
-
+    
   fileprivate func reload() {
     isUserInteractionEnabled = true
     backgroundColor = style.backgroundColor
@@ -162,6 +167,8 @@ open class KeyboardButton: UIView {
       addSubview(imageView!)
     }
   }
+    
+  private var theShadowLayer: CAShapeLayer?
 
   // MARK: Layout
   open override func layoutSubviews() {
@@ -334,7 +341,7 @@ open class KeyboardButton: UIView {
 
   // MARK: Hit Test
   open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-    let hitFrame = UIEdgeInsetsInsetRect(bounds, hitRangeInsets)
+    let hitFrame = bounds.inset(by: hitRangeInsets)
     return hitFrame.contains(point)
   }
 }

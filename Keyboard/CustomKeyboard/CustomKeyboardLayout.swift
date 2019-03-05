@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Shadow
 
 // MARK: - Layout Style
 public var CustomKeyboardLayoutStyle = KeyboardLayoutStyle()
@@ -46,24 +47,19 @@ public var CustomKeyboardLowercaseLeftKeyButtonStyle = KeyboardButtonStyle(textO
 public var CustomKeyboardLowercaseRightKeyButtonStyle = KeyboardButtonStyle(textOffsetY: -2, keyPopType: .right)
 
 public var CustomKeyboardSpaceButtonStyle = KeyboardButtonStyle(font: UIFont.systemFont(ofSize: 15))
-public var CustomKeyboardBackspaceButtonStyle = KeyboardButtonStyle(
-  backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
+public var CustomKeyboardBackspaceButtonStyle = KeyboardButtonStyle(backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
   imageSize: 20)
 
-public var CustomKeyboardShiftButtonStyle = KeyboardButtonStyle(
-  backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
+public var CustomKeyboardShiftButtonStyle = KeyboardButtonStyle(backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
   imageSize: 20)
 
-public var CustomKeyboardGlobeButtonStyle = KeyboardButtonStyle(
-  backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
+public var CustomKeyboardGlobeButtonStyle = KeyboardButtonStyle(backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
   imageSize: 20)
 
-public var CustomKeyboardReturnButtonStyle = KeyboardButtonStyle(
-  backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
+public var CustomKeyboardReturnButtonStyle = KeyboardButtonStyle(backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
   font: UIFont.systemFont(ofSize: 15))
 
-public var CustomKeyboardNumbersButtonStyle = KeyboardButtonStyle(
-  backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
+public var CustomKeyboardNumbersButtonStyle = KeyboardButtonStyle(backgroundColor: UIColor(red: 172.0/255.0, green: 179.0/255.0, blue: 188.0/255.0, alpha: 1),
   font: UIFont.systemFont(ofSize: 15))
 
 // MARK: - Identifier
